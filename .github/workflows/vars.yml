@@ -1,0 +1,11 @@
+name: variables concepts
+
+on:
+  workflow_dispatch:
+
+jobs:
+  variables:
+    runs-on: self-hosted
+    steps:
+      - name: variables
+        run: echo "value for variables stored ${{vars.MY_VAR}}"
