@@ -1,0 +1,19 @@
+name: context workflow
+
+on:
+  push:
+  workflow_dispatch:
+  
+jobs:
+  context:
+    runs-on: self-hosted
+    steps:
+      - name: Display info
+        run: |
+          echo "Event name ${{github.event_name}}"
+          echo "Ref ${{github.ref}}"
+          echo "SHA ${{github.sha}}"
+          echo "Actor ${{github.actor}}"
+          echo "workflow ${{github.workflow}}"
+          echo "Run Id ${{github.run_id}}"
+          echo "Runner number ${{github.run_number}}"
