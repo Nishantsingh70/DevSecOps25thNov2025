@@ -8,13 +8,13 @@ on:
 
 jobs:
   first-job:
-     runs-on: ubuntu-latest
+     runs-on: self-hosted
      steps:
        - name: First step
          run: sleep 20
 
   second-job:
-     runs-on: windows-latest
+     runs-on: self-hosted
      steps:
        - name: Second step
          run: echo "First workflow with second step"
