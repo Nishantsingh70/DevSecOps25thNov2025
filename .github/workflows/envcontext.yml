@@ -1,0 +1,19 @@
+name: env context workflow
+
+on:
+  push:
+  workflow_dispatch:
+
+env:
+  var1: 'workflow'
+  
+jobs:
+  env-context:
+    runs-on: self-hosted
+    env:
+      var1: 'job'
+    steps:
+      - name: Env
+        env:
+          var1: 'steps'
+        run: echo "${{env.var1}}"
