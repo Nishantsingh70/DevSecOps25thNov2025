@@ -1,0 +1,19 @@
+name: Input workflow
+
+run-name: Inputs | DEBUG - ${{inputs.debug}}
+
+on:
+  push:
+  workflow_dispatch:
+    inputs:
+      debug:
+      type: boolean
+      default: false
+
+jobs:
+  Inputs:
+    runs-on: self-hosted
+    steps: 
+      - name: Inputs
+        run: echo "inputs"
+    
