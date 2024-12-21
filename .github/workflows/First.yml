@@ -11,7 +11,8 @@ jobs:
      runs-on: ubuntu-latest
      steps:
        - name: First step
-         run: echo "First workflow"
+         run: sleep 20
+
   second-job:
      runs-on: windows-latest
      steps:
