@@ -1,6 +1,6 @@
 name: Input workflow
 
-
+run-name: Input | DEBUG - ${{inputs.debug}}
 
 on:
   push:
