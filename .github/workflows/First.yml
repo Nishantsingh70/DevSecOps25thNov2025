@@ -9,3 +9,8 @@ jobs:
      steps:
        - name: First step
          run: echo "First workflow"
+  second-job:
+     runs-on: windows-latest
+     steps:
+       - name: Second step
+         run: echo "First workflow with second step"
