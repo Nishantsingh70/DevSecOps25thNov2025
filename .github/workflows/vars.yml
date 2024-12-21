@@ -8,4 +8,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: variables
-        run: echo "value for variables stored ${{vars.MY_VAR}}"
+        run: |
+          echo "value for variables stored ${{vars.MY_VAR}}"
+          echo "value for secret stored ${{secrets.API_KEY}}"
+        
