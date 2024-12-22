@@ -1,0 +1,16 @@
+name: Template
+
+on:
+  workflow_call:
+    inputs:
+      message: 
+        description: "Message to print"
+        required: true
+        type: string
+
+jobs:
+  print-message:
+    runs-on: self-hosted
+    steps:
+      - name: print message
+        run: acho "${{inputs.message}}"
