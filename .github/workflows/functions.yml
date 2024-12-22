@@ -19,5 +19,5 @@ jobs:
          if: ${{cancelled()}}
          run: echo "I will get printed if workflow is cancelled."
       -  name: I will be always printed
-         if: ${{!calcelled()}}
+         if: ${{!cancelled()}}
          run: echo "I will be printed always"
