@@ -16,5 +16,5 @@ jobs:
          if: ${{failure()}}
          run: echo "I will be printed if first step failed"
       -  name: I will be always printed
-         if: ${{!calcelled}}
+         if: ${{!calcelled()}}
          run: echo "I will be printed always"
