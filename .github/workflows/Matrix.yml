@@ -16,4 +16,4 @@ jobs:
     steps:
       - uses: action/setup-nodejs@v4
         with:
-          node-version: ${matrix.node-version}
+          node-version: ${{matrix.node-version}}
