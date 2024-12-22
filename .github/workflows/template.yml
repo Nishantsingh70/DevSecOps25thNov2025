@@ -13,4 +13,4 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: print message
-        run: acho "${{inputs.message}}"
+        run: echo "${{inputs.message}}"
